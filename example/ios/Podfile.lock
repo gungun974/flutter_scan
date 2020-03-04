@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_scan (0.0.1):
+    - Flutter
+    - WeScan (>= 0.9)
+  - WeScan (1.4.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_scan (from `.symlinks/plugins/flutter_scan/ios`)
+
+SPEC REPOS:
+  trunk:
+    - WeScan
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_scan:
+    :path: ".symlinks/plugins/flutter_scan/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_scan: ad5ab082f6ee088e44f1a75c6b40bf6af8c12b6e
+  WeScan: 843bc14af0aa32147086fb24aaf6e271334b3cda
+
+PODFILE CHECKSUM: 0ba44ad07df4ab62269dc769727cf0f12b1e453d
+
+COCOAPODS: 1.8.4
