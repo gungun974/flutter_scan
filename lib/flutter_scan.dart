@@ -8,11 +8,14 @@ class FlutterScan {
       const MethodChannel('fr.gungun974/flutter_scan');
 
   static Future<File> scan() async {
-
-    var result = await _channel.invokeMethod('scan');
-    if (result is String) {
-      return new File(result);
+    try {
+      var result = await _channel.invokeMethod('scan');
+      if (result is String) {
+        return new File(result);
+      }
+      return null;
+    } on MissingPluginException {
+      return null;
     }
-    return null;
   }
 }
